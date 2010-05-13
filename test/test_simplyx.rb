@@ -7,7 +7,7 @@ class TestSimplyx < Test::Unit::TestCase
   end
   
   def test_transform
-    Simplyx::XsltProcessor.perform_transformation(tf('xml_test.xml'), tf('xslt_test.xsl')) 
+    Simplyx::XsltProcessor.perform_transformation(tf('xslt_test.xsl'), tf('xslt_test.xml')) 
   end
   
   private

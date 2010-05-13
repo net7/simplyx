@@ -1,6 +1,6 @@
 include Java
 module Simplyx
-  java_dir = File.join(File.dirname(__FILE__), '..', 'java')
+  java_dir = File.join(File.dirname(__FILE__), '..', '..', 'java')
   Dir["#{java_dir}/saxon*.jar"].each { |jar| require jar }
   include_class "javax.xml.transform.TransformerFactory"
   include_class "javax.xml.transform.Transformer"
